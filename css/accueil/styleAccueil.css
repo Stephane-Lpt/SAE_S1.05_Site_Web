@@ -1,0 +1,203 @@
+main section#firstSection{
+	padding: 6% 4% 0 0;
+	display: flex;
+	align-items: center;
+	padding-bottom: 4em;
+  opacity: 0;
+  animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	animation-name: slideinbybottom;
+}
+
+section#firstSection aside{
+	width: 50%;
+}
+
+section#firstSection article{
+	width: 50%;
+	margin: auto;
+}
+
+section#firstSection article h1{
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+
+main section#secondSection{
+}
+
+section#secondSection{
+	display: flex;
+	margin-top: 2em;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+  opacity: 0;
+  animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	animation-name: slideinbybottom;
+}
+
+section#secondSection a{
+	background-color: lightgrey;
+	color: black;
+
+	max-width: 15em;
+	max-height: 15em;
+
+	overflow: auto;
+
+	margin: 0 1em 2em 1em;
+	padding: 0 0 1em 1em;
+
+	font-size: 1.2em;
+}
+
+section#secondSection a:hover{
+	background-color: grey;
+}
+
+section#secondSection a h2{
+	font-size: 1.4em;
+	padding: .3em;
+	text-align: center;
+}
+
+h2,p,article>h1{
+	font-family: 'Caviar';
+}
+
+
+
+@media screen and (max-width: 900px){   /* media mobile */
+	header{
+		flex-direction: column;
+	}
+
+	header a#logoLink{
+		margin: 0;
+		width: 4em;
+	}
+
+	header nav.computer{
+		display: none;
+	}
+
+	header nav.mobile{
+		margin-top: -1.5em;
+	}
+
+	header nav.mobile a{
+		font-size: 1.1em;
+	}
+
+	main section#firstSection{
+		flex-direction: column;
+		padding-bottom: 5%;
+	}
+
+	section#firstSection aside{
+		width: 50%;
+	}
+
+	section#firstSection article{
+		font-size: 1.2em;
+		width: 80%;
+		margin-top: 2em;
+	}
+
+	section#firstSection article p{
+		max-height: 25em;
+		overflow: auto;
+	}
+
+}
+
+@media screen and (max-width: 250px){
+	main section#firstSection aside{
+		width: 100%;
+	}
+
+	header nav.mobile{
+		flex-direction: column;
+		margin-top: -.5em;
+	}
+
+	header nav.mobile a{
+		padding: 0;
+	}
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 900px){
+	header a#logoLink{
+		width: 10%;
+	}
+
+	header nav.mobile{
+		display: none;
+	}
+
+	main section#firstSection article{
+		font-size: 1.2em;
+		width: 80%;
+		margin-top: 2em;
+	}
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px){
+	header{
+		padding: 0 2% 0 2%;
+	}
+
+	header a#logoLink{
+		width: 8%;
+		margin-right: 2%;
+	}
+
+	header nav a{
+		font-size: 1.1em;
+		padding-left: 0.1em;
+	}
+
+	main section#firstSection{
+		margin: 0 5% 0 5%;
+	}
+
+	main section#firstSection article{
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px){
+	header{
+		padding: 0 3% 0 3%;
+	}
+
+	header a#logoLink{
+		width: 7%;
+		margin-right: 3%;
+	}
+
+	header nav a{
+		font-size: 1.2em;
+		padding-left: 0.2em;
+	}
+
+	main section#firstSection{
+		margin: 0 8% 0 8%;
+	}
+
+	main section#firstSection article{
+		font-size: 1.2em;
+	}
+}

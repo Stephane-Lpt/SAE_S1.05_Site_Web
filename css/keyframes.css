@@ -1,0 +1,55 @@
+/* ---------------- Key frames --------------------- */
+
+@keyframes fadein {
+  from {
+  	opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideinbyleft{
+  from {
+  	margin-left: -20%;
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0%;
+  }
+}
+
+@keyframes slideinbyright{
+  from {
+  	margin-right: -20%;
+  }
+
+  to {
+    opacity: 1;
+    margin-right: 0%;
+  }
+}
+
+@keyframes slideinbytop {
+  from {
+    margin-top: -20%;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0%;
+  }
+}
+
+@keyframes slideinbybottom {
+  from {
+    margin-bottom: -20%;
+  }
+
+  to {
+    opacity: 1;
+    margin-bottom: 0%;
+  }
+}
